@@ -4,6 +4,9 @@ import './Login.css'
 const SignUp =()=>{
     return(
         <>
+        <body>
+            
+
         <div className="homebody">
             <h1>Create An Account</h1>
             <div className="Formmain">
@@ -21,17 +24,18 @@ const SignUp =()=>{
                     <input type="text"  placeholder="Enter Password"/>
 
                     <div style={{display:"flex"}}>
-                        <input type="checkbox" />
+                        <input className="chekboxxx" type="checkbox" style={{position:"relative", top:"-5px"}} />
                         <h3 style={{fontWeight:'100', fontSize:"15px", position:'relative', top:'5px'}}>I agree to the Terms of Service</h3>
                     </div>
                 </form>
                
 
-                <div className="btnLog">
+                <div className="btnLog btnSign">
                     <button>Create account</button>
                 </div>
             </div>
         </div>
+        </body>
         </>
     )
 }

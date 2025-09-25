@@ -3,6 +3,9 @@ import './Login.css'
  const Login =()=>{
     return (
         <>
+        <body>
+            
+
         <div className="homebody">
             <h1>Purse</h1>
             <div className="Formmain">
@@ -21,7 +24,7 @@ import './Login.css'
                         <input type="checkbox" />
                         <h3>Remerber me</h3>
                     </div>
-                    <div>
+                    <div className="forgetpass">
                         <h3>Forget password</h3>
                     </div>
                 </div>
@@ -31,6 +34,7 @@ import './Login.css'
                 </div>
             </div>
         </div>
+        </body>
         </>
     )
  }

@@ -1,0 +1,113 @@
+*{
+    margin:5px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(190, 206, 238, 0.245);
+
+}
+.USerFeed{
+    display: flex;
+    justify-content:space-between;
+}
+.IconSet{
+    display: flex;
+}
+.AtmCArd{
+    background: linear-gradient(10deg, rgb(78, 76, 180) 0%, rgb(78, 9, 121) 35%);
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+
+}
+.Walet{
+    background-color: rgba(255, 255, 255, 0.222);
+    padding: 10px;
+    border-radius: 15px;
+}
+.AtmCArd button{
+    padding: 10px 150px;
+   
+    border: none;
+    position: relative;
+    top: -5px;
+    background: none !important;
+}
+.BodyQuickAction{
+    background: white;
+    box-shadow: 5px 1px 30px 5px rgba(0, 0, 0, 0.138);
+    border-radius: 20px;
+    padding: 40px;
+}
+.QuickAction{
+    display: flex;
+    justify-content: space-around;
+}
+.QuickAction h4{
+    position: relative;
+    left:-3px;
+}
+.BodyQuickAction button{
+    
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.236);
+    color: white;
+    position: relative;
+    left:6px;
+}
+.Cheivement{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.CheivementHead{
+    display: flex;
+    gap: 50px;
+    background: white;
+    padding:10px 15px;
+    border-radius:20px ;
+    justify-content: space-between;
+    /* background-color: #ecc2882a; */
+}
+@media (min-width:200px) and (max-width:800px){
+   .USerFeed p{
+    display: none;
+   }
+   .MainCArd{
+    padding: 10px !important;
+   }
+   .AtmCArd{
+    width:fit-content;
+    position: relative;
+    left: -10px;
+   }
+   .AtmCArd button{
+    padding: 5px  20px;
+    text-wrap: nowrap;
+}
+/* .QuickAction{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+} */
+ .QuickAction h4{
+    font-size: 12px;
+}
+.BodyQuickAction{
+    width: fit-content;
+    margin:50px 10px !important;
+    text-wrap: nowrap;
+    padding: 20px 10px;
+    position: relative;
+    left: -10px;   
+}
+.Cheivement{
+    flex-direction: column;
+    gap: 20px;
+}
+.CheivementHead{
+
+}
+}
