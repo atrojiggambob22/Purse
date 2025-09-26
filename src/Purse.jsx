@@ -1,7 +1,16 @@
 import React from "react"
 import {Wallet,Plus,Home, ArrowUpRight,ArrowDownLeft,DollarSign,Search,Bell, Settings,Target, CheckCircle,TrendingUp } from "lucide-react";
 import "./Purse.css"
+import History from './History'
 const Purse = () => {
+    
+    const history = History[0];
+     const history1 = History[1];
+      const history2 = History[2];
+       const history3 = History[3];
+        const history4 = History[4];
+    
+
     return(
         <>
         <body>
@@ -139,6 +148,76 @@ const Purse = () => {
                     <div style={{display:"flex", justifyContent:"space-between"}}>
                         <p>Recent Actiivty</p>
                         <p>View All</p>
+                    </div>
+                    <div>
+                        <div className="HistoryCard">
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div className="TheIcom">{history.icon}</div>
+                                <div>
+                                    <h4>{history.title}</h4>
+                                    <p>{history.date}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>{history.amount}</h4>
+                                <p>{history.time}</p>
+                            </div>
+                        </div>
+
+                         <div className="HistoryCard">
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div className="TheIcom">{history1.icon}</div>
+                                <div>
+                                    <h4>{history1.title}</h4>
+                                    <p>{history1.date}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>{history1.amount}</h4>
+                                <p>{history1.time}</p>
+                            </div>
+                        </div>
+                        
+                         <div className="HistoryCard">
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div className="TheIcom">{history2.icon}</div>
+                                <div>
+                                    <h4>{history2.title}</h4>
+                                    <p>{history2.date}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>{history2.amount}</h4>
+                                <p>{history2.time}</p>
+                            </div>
+                        </div>
+                        <div className="HistoryCard">
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div className="TheIcom">{history3.icon}</div>
+                                <div>
+                                    <h4>{history3.title}</h4>
+                                    <p>{history3.date}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>{history3.amount}</h4>
+                                <p>{history3.time}</p>
+                            </div>
+                        </div>
+                        
+                        <div className="HistoryCard">
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div className="TheIcom">{history4.icon}</div>
+                                <div>
+                                    <h4>{history4.title}</h4>
+                                    <p>{history4.date}</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>{history4.amount}</h4>
+                                <p >{history4.time}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

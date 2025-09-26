@@ -72,6 +72,24 @@ body{
     justify-content: space-between;
     /* background-color: #ecc2882a; */
 }
+
+.HistoryCard{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.236);
+    margin: 20px 0;
+    text-wrap: nowrap;
+}
+.TheIcom{
+    font-size: 30px;
+ 
+    padding: 14px 20px;
+    background-color: #ececec;
+    border-radius: 20px;
+}
 @media (min-width:200px) and (max-width:800px){
    .USerFeed p{
     display: none;
@@ -87,6 +105,7 @@ body{
    .AtmCArd button{
     padding: 5px  20px;
     text-wrap: nowrap;
+
 }
 /* .QuickAction{
     display: grid;
@@ -107,7 +126,18 @@ body{
     flex-direction: column;
     gap: 20px;
 }
-.CheivementHead{
-
+.HistoryCard{
+    position: relative;
+    justify-content: space-evenly !important;
+    gap: 30px;
+    width: fit-content;
+    padding: 10px 20px;
 }
+/* .HistoryCard{
+    position: relative;
+    justify-content: space-evenly !important;
+    gap:10px;
+    max-width: fit-content;
+    padding: 10px 20px;
+} */
 }
