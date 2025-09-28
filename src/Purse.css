@@ -90,6 +90,22 @@ body{
     background-color: #ececec;
     border-radius: 20px;
 }
+.LogoutBtn{
+    background: rgba(255, 0, 0, 0.897);
+    color: white;
+    border-radius:10px;
+    height: fit-content;
+    padding: 1px 20px;
+    /* width: fit-content; */
+    /* transition: .5s linear ; */
+
+}
+.LogoutBtn:hover{
+    /* background: linear-gradient(green, blue); */
+    /* gap: 10px !important; */
+    cursor: pointer;
+    
+}
 @media (min-width:200px) and (max-width:800px){
    .USerFeed p{
     display: none;
@@ -98,9 +114,9 @@ body{
     padding: 10px !important;
    }
    .AtmCArd{
-    width:fit-content;
+    min-width:100%;
     position: relative;
-    left: -10px;
+    left: -15px;
    }
    .AtmCArd button{
     padding: 5px  20px;
@@ -130,14 +146,18 @@ body{
     position: relative;
     justify-content: space-evenly !important;
     gap: 30px;
-    width: fit-content;
+    min-width: 100%;
     padding: 10px 20px;
 }
-/* .HistoryCard{
+.HistoryCard{
     position: relative;
     justify-content: space-evenly !important;
     gap:10px;
     max-width: fit-content;
     padding: 10px 20px;
-} */
+}
+.HistoryLord{
+    position: relative;
+    left:-23px;
+}
 }

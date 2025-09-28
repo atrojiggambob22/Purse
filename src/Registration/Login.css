@@ -1,5 +1,6 @@
 *{
      font-family: 'Poppins', sans-serif;
+     /* overflow-y: hidden; */
     /* font-family:; */
     /* overflow-x: hidden; */
 }
@@ -14,6 +15,8 @@ body{
     padding: 40px;
     border-radius: 30px;
     background: white;
+    position: relative;
+    top:-60px;
 
 }
 h1{
@@ -74,8 +77,19 @@ h1{
         top: 60px;
         /* padding: 20px; */
     }
-    
-
+    /* .btnSign{
+        position: relative;
+        left:-50px;
+    } */
+    .Formdownsection{
+        position: relative;
+        left:-30px;
+        top: 10px;
+    }
+    .Formdownsection input{
+        position: relative;
+        top: -10px;
+    }
 }
 @media (min-width:250px) and (max-width:350px){
     .btnSign{
@@ -112,6 +126,7 @@ h1{
         top:4px !important;
     }
     .btnSign{
+        /* margin: 5px 40p; */
         position: relative;
         left:-20px;
     }
@@ -124,4 +139,13 @@ h1{
     .Formdownsection{
         gap: 20px !important;
     }
+    .btnSign{
+        position: relative;
+        left:-40px !important;
+       
+    }
+    .btnSign button{
+        padding: 10px 60px !important;
+    }
+
 } 

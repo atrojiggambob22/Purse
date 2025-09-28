@@ -1,9 +1,11 @@
 import React from "react"
-import {Wallet,Plus,Home, ArrowUpRight,ArrowDownLeft,DollarSign,Search,Bell, Settings,Target, CheckCircle,TrendingUp } from "lucide-react";
+import {Wallet,Plus,Home, ArrowUpRight,ArrowDownLeft,DollarSign,Search,Bell, Settings,Target, CheckCircle,TrendingUp, LogOut } from "lucide-react";
 import "./Purse.css"
 import History from './History'
+import { useNavigate } from 'react-router-dom';
 const Purse = () => {
     
+    const navigate = useNavigate();
     const history = History[0];
      const history1 = History[1];
       const history2 = History[2];
@@ -26,7 +28,7 @@ const Purse = () => {
                 </div>
                </div>
                <div className="IconSet">
-                <div>
+                {/* <div>
                     <div>
                         <Search size={24}/>
                     </div>
@@ -41,8 +43,12 @@ const Purse = () => {
                 <div>
                     <div>
                         <Settings size={24}/>
-                    </div>
+                    </div> */}
                     
+                {/* </div> */}
+                <div style={{display:"flex  ", alignItems:"center", gap:"1px", position:"relative", top:"-5px",}} className="LogoutBtn" onClick={() => navigate('/Login')}>
+                    <button style={{border:"none", background:"none", color:'white'}}>Logout </button>
+                    <div style={{position:"relative", top:'4px', left:"10px"}}><LogOut size={18}/></div>
                 </div>
                </div>
             </div>
@@ -60,9 +66,9 @@ const Purse = () => {
                
                     </div>
                     <div>
-                        <h3 style={{fontSize:"30px", fontWeight:"300"}}>$15,250.00</h3>
+                        <h3 style={{fontSize:"30px", fontWeight:"300"}}>$28,450.25</h3>
                 
-                <p>last Updated ..</p>
+                {/* <p>last Updated ..</p> */}
                 </div>
                 
                </div>
@@ -144,7 +150,7 @@ const Purse = () => {
             </div>
 
             <div className="History">
-                <div>
+                <div className="HistoryLord">
                     <div style={{display:"flex", justifyContent:"space-between"}}>
                         <p>Recent Actiivty</p>
                         <p>View All</p>
